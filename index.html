@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.jpg">
+    <title>Minesweeper</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1 class="header-title">Minesweeper</h1>
+        </header>
+
+        <div class="game">
+            <div class="counters">
+                <div class="counter-bombs">
+                    <span class="bombs-digit"></span>
+                    <span class="bombs-digit"></span>
+                    <span class="bombs-digit"></span>
+                </div>
+
+                <button class="smile" id="smile"></button>
+
+                <div class="stopwatch">
+                    <span class="seconds-digit"></span>
+                    <span class="seconds-digit"></span>
+                    <span class="seconds-digit"></span>
+                </div>
+            </div>
+            <div class="field"></div>
+        </div>
+
+        <footer class="footer">
+            <a class="footer-link" href="http://itleiman.ru/" target="_blank" rel="noreferrer">More projects</a>
+        </footer>
+    </div>
+    
+    <script src="app.js" defer></script>
+</body>
+</html>
