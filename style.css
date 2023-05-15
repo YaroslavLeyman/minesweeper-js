@@ -1,245 +1,228 @@
 @font-face {
-    font-family: main-font;
-    src: url("./assets/fonts/mine-sweeper.ttf");
+  font-family: main-font;
+  src: url("./assets/fonts/mine-sweeper.ttf");
 }
-
 
 /* Body */
 body {
-    background-color: #b5b3b3;
-    font-family: "main-font", sans-serif;
+  background-color: #b5b3b3;
+  font-family: "main-font", sans-serif;
 }
-
 
 /* Клетки */
 button {
-    height: 15px;
-    background-image: url(./assets/sprite.png);
-    background-position: 0px -52px;
-    border: 0px;
+  height: 15px;
+  background-image: url(./assets/sprite.png);
+  background-position: 0px -52px;
+  border: 0px;
 }
-
 
 /* Main */
 .main {
-    display: grid;
-    justify-items: center;
+  display: grid;
+  justify-items: center;
 }
-
 
 /* H1 */
 .header-title {
-    margin: 20px 0;
+  margin: 20px 0;
 }
-
 
 /* Game */
 .game {
-    display: flex;
-    flex-direction: column;
-    background: lightgrey;
-    box-sizing: border-box;
-    border: 4px outset;
-    zoom: 1.3;
+  display: flex;
+  flex-direction: column;
+  background: lightgrey;
+  box-sizing: border-box;
+  border: 4px outset;
+  zoom: 1.3;
 }
-
 
 /* Игровое поле*/
 .field {
-    display: grid;
-    grid-template-columns: repeat(16, 16px);
-    margin-bottom: 5px;
-    padding: 2px 2px 2px 2px;
-    box-sizing: border-box;
-    border: 2px inset;
+  display: grid;
+  grid-template-columns: repeat(16, 16px);
+  margin-bottom: 5px;
+  padding: 2px 2px 2px 2px;
+  box-sizing: border-box;
+  border: 2px inset;
 }
-
 
 /* Секундомер */
 .stopwatch {
-    display: flex;
-    background-color: black;
-    padding: 1px;
+  display: flex;
+  background-color: black;
+  padding: 1px;
 }
 .bombs-digit,
 .seconds-digit {
-    display: inline-block;
-    width: 14px;
-    background-repeat: no-repeat;
-    background-position: center;
+  display: inline-block;
+  width: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
 
-    background-image: url(./assets/sprite.png);
-    background-position: -125px 2px;
+  background-image: url(./assets/sprite.png);
+  background-position: -125px 2px;
 }
-
 
 /* Счетчики */
 .counters {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 0px;
-    padding: 5px 2px;
-    box-sizing: border-box;
-    border: 4px inset;
-    
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+  padding: 5px 2px;
+  box-sizing: border-box;
+  border: 4px inset;
 }
-
 
 /* Счетчик бомб */
 .counter-bombs {
-    display: flex;
-    background-color: black;
-    padding: 1px;
+  display: flex;
+  background-color: black;
+  padding: 1px;
 }
-
 
 /* Footer */
 .footer {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .footer-link {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
-
 
 /* Спрайты бомб */
 .bomb {
-    background-image: url(./assets/sprite.png);
-    background-position: -102px -51px;
+  background-image: url(./assets/sprite.png);
+  background-position: -102px -51px;
 }
 .remaining-bombs {
-    background-image: url(./assets/sprite.png);
-    background-position: -85px -51px;
+  background-image: url(./assets/sprite.png);
+  background-position: -85px -51px;
 }
 .clear-bomb {
-    background-image: url(./assets/sprite.png);
-    background-position: -119px -51px;
+  background-image: url(./assets/sprite.png);
+  background-position: -119px -51px;
 }
-
 
 /* Спрайт флаг */
 .flag {
-    background-image: url(./assets/sprite.png);
-    background-position: -34px -52px;
+  background-image: url(./assets/sprite.png);
+  background-position: -34px -52px;
 }
-
 
 /* Спрайт вопрос */
 .question {
-    background-image: url(./assets/sprite.png);
-    background-position: -51px -52px;
+  background-image: url(./assets/sprite.png);
+  background-position: -51px -52px;
 }
-
 
 /* Cпрайты цифр секундомера */
 .num-0 {
-    background-image: url(./assets/sprite.png);
-    background-position: -125px 2px;
+  background-image: url(./assets/sprite.png);
+  background-position: -125px 2px;
 }
 .num-1 {
-    background-image: url(./assets/sprite.png);
-    background-position: 1px 2px;
+  background-image: url(./assets/sprite.png);
+  background-position: 1px 2px;
 }
 .num-2 {
-    background-image: url(./assets/sprite.png);
-    background-position: -13px 2px;
+  background-image: url(./assets/sprite.png);
+  background-position: -13px 2px;
 }
 .num-3 {
-    background-image: url(./assets/sprite.png);
-    background-position: -27px 2px;
+  background-image: url(./assets/sprite.png);
+  background-position: -27px 2px;
 }
 .num-4 {
-    background-image: url(./assets/sprite.png);
-    background-position: -41px 2px;
+  background-image: url(./assets/sprite.png);
+  background-position: -41px 2px;
 }
 .num-5 {
-    background-image: url(./assets/sprite.png);
-    background-position: -55px 2px;
+  background-image: url(./assets/sprite.png);
+  background-position: -55px 2px;
 }
 .num-6 {
-    background-image: url(./assets/sprite.png);
-    background-position: -69px 2px;
+  background-image: url(./assets/sprite.png);
+  background-position: -69px 2px;
 }
 .num-7 {
-    background-image: url(./assets/sprite.png);
-    background-position: -83px 2px;
+  background-image: url(./assets/sprite.png);
+  background-position: -83px 2px;
 }
 .num-8 {
-    background-image: url(./assets/sprite.png);
-    background-position: -97px 2px;
+  background-image: url(./assets/sprite.png);
+  background-position: -97px 2px;
 }
 .num-9 {
-    background-image: url(./assets/sprite.png);
-    background-position: -111px 2px;
+  background-image: url(./assets/sprite.png);
+  background-position: -111px 2px;
 }
-
 
 /* Спрайты цифр поля */
 .field-digit-0 {
-    background-image: url(./assets/sprite.png);
-    background-position: 122px 33px;
+  background-image: url(./assets/sprite.png);
+  background-position: 122px 33px;
 }
 .field-digit-1 {
-    background-image: url(./assets/sprite.png);
-    background-position: 139px -68px;
+  background-image: url(./assets/sprite.png);
+  background-position: 139px -68px;
 }
 .field-digit-2 {
-    background-image: url(./assets/sprite.png);
-    background-position: 122px -68px;
+  background-image: url(./assets/sprite.png);
+  background-position: 122px -68px;
 }
 .field-digit-3 {
-    background-image: url(./assets/sprite.png);
-    background-position: 105px -68px;
+  background-image: url(./assets/sprite.png);
+  background-position: 105px -68px;
 }
 .field-digit-4 {
-    background-image: url(./assets/sprite.png);
-    background-position: 88px -68px;
+  background-image: url(./assets/sprite.png);
+  background-position: 88px -68px;
 }
 .field-digit-5 {
-    background-image: url(./assets/sprite.png);
-    background-position: 71px -68px;
+  background-image: url(./assets/sprite.png);
+  background-position: 71px -68px;
 }
 .field-digit-6 {
-    background-image: url(./assets/sprite.png);
-    background-position: 54px -68px;
+  background-image: url(./assets/sprite.png);
+  background-position: 54px -68px;
 }
 .field-digit-7 {
-    background-image: url(./assets/sprite.png);
-    background-position: 37px -68px;
+  background-image: url(./assets/sprite.png);
+  background-position: 37px -68px;
 }
 .field-digit-8 {
-    background-image: url(./assets/sprite.png);
-    background-position: 20px -68px;
+  background-image: url(./assets/sprite.png);
+  background-position: 20px -68px;
 }
-
 
 /* Спрайты Smiles */
 .smile {
-    width: 26px;
-    height: 26px;
-    background-image: url(./assets/sprite.png);
-    background-position: 0px -24px;
-    border: 0;
-    cursor: pointer;
+  width: 26px;
+  height: 26px;
+  background-image: url(./assets/sprite.png);
+  background-position: 0px -24px;
+  border: 0;
+  cursor: pointer;
 }
 #smile {
-    background-image: url(./assets/sprite.png);
-    background-position: 0px -24px;
+  background-image: url(./assets/sprite.png);
+  background-position: 0px -24px;
 }
 #sad-smile {
-    background-image: url(./assets/sprite.png);
-    background-position: 170px -24px;
+  background-image: url(./assets/sprite.png);
+  background-position: 170px -24px;
 }
 #cool-smile {
-    background-image: url(./assets/sprite.png);
-    background-position: -81px -24px;
+  background-image: url(./assets/sprite.png);
+  background-position: -81px -24px;
 }
 #pressed-smile {
-    background-image: url(./assets/sprite.png);
-    background-position: -27px -24px;
+  background-image: url(./assets/sprite.png);
+  background-position: -27px -24px;
 }
 #scared-smile {
-    background-image: url(./assets/sprite.png);
-    background-position: -54px -24px;
+  background-image: url(./assets/sprite.png);
+  background-position: -54px -24px;
 }
